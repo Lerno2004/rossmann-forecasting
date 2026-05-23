@@ -22,7 +22,7 @@ if mode == "Use Store Number":
     st.subheader(f"🏪 Store {store_num} — Sales Forecast")
 
     try:
-        df_train = pd.read_csv("train.csv")
+        df_train = pd.read_csv("train_small.csv", low_memory=False)
         df_train["Date"] = pd.to_datetime(df_train["Date"])
         df_clean = df_train[(df_train["Open"] == 1) & (df_train["Sales"] > 0)]
 
