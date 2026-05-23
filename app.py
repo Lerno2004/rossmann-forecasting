@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from prophet import Prophet
+import plotly.graph_objects as go
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 st.set_page_config(page_title="Sales Forecasting", page_icon="📈", layout="wide")
